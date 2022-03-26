@@ -1,0 +1,89 @@
+*{
+    font-family: sans-serif;
+}
+
+main {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+table, th, td, tr {
+    border: 1px solid white;
+}
+th, td, tr {
+    padding: 5px;
+}
+
+h1 {
+    padding: 1em;
+}
+#datos, #tablas{
+    display: flex;
+    margin: 1em;
+    padding: 1em;
+}
+#maximo p{
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#minimo p{
+    color: green;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#medio p{
+    color: yellow;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#tabla1, #tabla2, #tabla3, #maximo, #minimo, #medio{
+    float: left;
+    width: 33%;
+}
+#tabla1 table, #tabla2 table, #tabla3 table{
+    text-align: center;
+}
+#tabla1 table tr td, #tabla2 table tr td, #tabla3 table tr td {
+    width: 100px
+}
+#grafico{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.botonw{
+    background-image:url("../img/whatsapp1_opt.jpg");
+    background-repeat: no-repeat;
+    height: 56px;
+    width: 75px;
+    background-position: center;
+  }
+
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+canvas {
+    height: 400px;
+    width: 600px;
+    border : 1px solid white;
+  }
