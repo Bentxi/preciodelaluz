@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea evaluativa para DWEC04 de Rubén Montes</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+<main>
+    <div id="precios">
+        <h1 id="tituloprincipal">Precios de la luz de hoy</h1>
+        <div id="datos">
+            <div id="maximo">
+                <h2 id="titmax">Precio máximo</h2>
+            </div>
+            <div id="medio">
+                <h2 id="titmed">Precio medio</h2>
+            </div>
+            <div id="minimo">
+                <h2 id="titmin">Precio mínimo</h2>
+            </div>
+        </div>
+    </div>  
+    <h3 id="titulografico">Gráfica con la variación del precio durante el dia de hoy</h3>
+    <div id="grafico">
+    <canvas id="speedChart" width="600" height="400"></canvas>
+    </div>
+    <div id="tablas">
+        <div id="tabla1">
+            <h3 id="titulotabla">Precios de la luz por horas</h3>
+            <table id="tabla">
+                <thead>
+                <tr>
+                <th>Hora</th>
+                <th>Precio</th>
+                <th>Info Extra</th>
+                </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="tabla2">
+            <h3 id="titulotabla2">TOP 5 BARATAS</h3>
+            <table id="tablaBaratos">
+                <thead>
+                <tr>
+                <th>Hora</th>
+                <th>Precio</th>
+                <th>Info Extra</th>
+                <th>Compartir</th>
+                </tr>
+                </thead>
+                <tbody id="cuerpoTablaBaratos">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="tabla3">
+            <h3 id="titulotabla3">TOP 5 CARAS</h3>
+            <table id="tablaCaras">
+                <thead>
+                <tr>
+                <th>Hora</th>
+                <th>Precio</th>
+                <th>Info Extra</th>
+                </tr>
+                </thead>
+                <tbody id="cuerpoTablaCaras">
+
+                </tbody>
+            </table>
+        </div>
+    </div>   
+</main>
+<script src="js/lectura.js"></script>
+
+</body>
+</html>
+
